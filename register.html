@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register |  AI & Tech Society</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1> AI &amp; Tech Society</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Event Registration Form</h2>
+            <p>Complete the form below to secure your seat at our workshops.</p>
+
+            <form id="registrationForm" action="#" method="POST">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required minlength="3" placeholder="e.g. Alex Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">University Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="student@university.edu">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (10–11 digits):</label>
+                        <input type="tel" id="phone" name="phone" required pattern="{10,11}" placeholder="03001234567">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Event Selection</legend>
+                    
+                    <div class="form-group">
+                        <label for="eventChoice">Select Event:</label>
+                        <select id="eventChoice" name="eventChoice" required>
+                            <option value="" disabled selected>-- Choose an Event --</option>
+                            <option value="Git &amp; GitHub Workshop">Hands-on Git &amp; GitHub Workshop</option>
+                            <option value="HTML5 &amp; Accessibility">HTML5 &amp; Accessibility Deep Dive</option>
+                            <option value="CSS3 Flexbox &amp; Grid">CSS3 Flexbox &amp; Grid Masterclass</option>
+                            <option value="AI &amp; Web APIs Hackathon">AI Prompting &amp; Web APIs Hackathon</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How did you hear about us?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="source" value="Social Media" required> Social Media</label>
+                            <label><input type="radio" name="source" value="Class Announcement"> Class Announcement</label>
+                            <label><input type="radio" name="source" value="Friend/Colleague"> Friend/Colleague</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+
+            <div id="statusMessage" class="status-message" aria-live="polite"></div>
+        </section>
+
+        <section class="registrations-display">
+            <h2>Saved Event Registrations</h2>
+            <div id="tableContainer"></div>
+            <button id="clearBtn" class="clear-btn">Clear All Registrations</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026  AI &amp; Tech Society. Built for  Web Technologies.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
