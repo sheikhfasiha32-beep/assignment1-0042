@@ -1,0 +1,47 @@
+/* 1. CSS Custom Properties & Universal Box Model Reset */
+:root {
+    --primary-color: #0b1f3a;
+    --secondary-color: #1e56d6;
+    --accent-color: #00b4d8;
+    --bg-light: #f8f9fa;
+    --text-dark: #212529;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --font-stack: "Segoe UI", system-ui, sans-serif;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 1100px;
+    width: 90%;
+    margin: var(--spacing-lg) auto;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
