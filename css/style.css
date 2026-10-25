@@ -45,3 +45,75 @@ h1, h2, h3 {
 p {
     margin-bottom: var(--spacing-md);
 }
+/* 2. Header & Flexbox Navigation */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--secondary-color);
+    outline: 2px solid var(--accent-color);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Cards & Sidebar Styling */
+.featured-card, .sidebar-box, .event-card, .form-container, .registrations-display {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.featured-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figcaption {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.sidebar-box h3::before {
+    content: "📌 ";
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: var(--spacing-md);
+    margin-top: auto;
+}
