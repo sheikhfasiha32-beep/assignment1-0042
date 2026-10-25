@@ -1,9 +1,9 @@
-# CIT331 AI & Tech Society Website
+#  AI & Tech Society Website
 
 **Course:**  Web Technologies (Assignment 1)  
 **Author:** Fasiha  
 **Roll Number:** [0042]  
-**Live Site:** [https://sheikhfasiha32-beep.github.io/assignment1-0042/](https://sheikhfasiha32-beep.github.io/assignment1-0042/)  
+**Live Site:** https://sheikhfasiha32-beep.github.io/assignment1-0042/
 
 ## Overview
 The ** AI & Tech Society** website is a multi-page, responsive web application designed for a university student club. It serves to introduce the society, display upcoming tech events, and allow students to register online. The site is built entirely with hand-crafted semantic HTML5, custom CSS3, and plain JavaScript, adhering strictly to core web standards without external libraries or frameworks.
@@ -21,4 +21,4 @@ The ** AI & Tech Society** website is a multi-page, responsive web application d
 ## How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sheikhfasiha32-beep/assignment1-0042.git
+   git clone https://sheikhfasiha32-beep.github.io/assignment1-0042/
